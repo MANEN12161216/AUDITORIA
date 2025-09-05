@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>DRIFT</title>
-  <link rel="icon" href="/imagenes/drift.png" type="image/png">
-  <script src="/js/ventanas.js" defer></script>
-  <link rel="stylesheet" href="/css/estilos.css">
-  <script src="/js/interaccion.js" defer></script>
+  <link rel="icon" href="/AUDITORIA/imagenes/drift.png" type="image/png">
+  <script src="/AUDITORIA/js/ventanas.js" defer></script>
+  <link rel="stylesheet" href="/AUDITORIA/css/estilos.css">
+  <script src="/AUDITORIA/js/interaccion.js" defer></script>
 </head>
 <body data-tab="drift">
-<div id="menu-visual-dinamico"></div>
+  <div id="menu-visual-dinamico"></div>
 
   <script>
-    fetch('/componentes/menu-visual.html')
+    fetch('/AUDITORIA/componentes/menu-visual.html')
       .then(res => res.text())
       .then(html => {
         document.getElementById('menu-visual-dinamico').innerHTML = html;
@@ -21,162 +21,138 @@
 
   <header><h1>Historia Del Drift y Evolución</h1></header>
 
-<section>
-  <h2>Autos actuales y accesibles para Drift</h2>
-  <p>
-    El drifting es una disciplina que exige precisión, control y un vehículo que responda con agilidad. Aunque muchos asocian el drift con autos de competición o modelos exóticos, existen opciones accesibles que permiten iniciarse en esta técnica sin romper el presupuesto. Aquí encontrarás una guía completa de autos recomendados, tanto clásicos como modernos, que destacan por su rendimiento, facilidad de modificación y disponibilidad en el mercado.
-  </p>
-
-  <h3><b>1. Mazda MX-5 Miata</b></h3>
-  <p>
-    Ligero, equilibrado y con tracción trasera, el Miata es uno de los autos más populares para aprender drift. Su bajo peso y dirección precisa lo hacen ideal para maniobras como el feint drift y el clutch kick.
-  </p>
-  <ul>
-    <li>Motor: 2.0L, 184 HP</li>
-    <li>Transmisión: Manual de 6 velocidades</li>
-    <li>Ventajas: Bajo costo de mantenimiento, gran comunidad de soporte, excelente distribución de peso</li>
-    <li>Precio estimado: $8,000–$15,000 (usado)</li>
-  </ul>
-  <img src="/imagenes/autos/miata.png" alt="Mazda MX-5 Miata" width="1000" height="500">
-</section>
-<section>
-  <h3><b>2. Nissan 240SX</b></h3>
-  <p>
-    Ícono del drift callejero y profesional. Su chasis es altamente modificable, y su tracción trasera lo hace perfecto para maniobras agresivas. Muy usado en la escena estadounidense y japonesa.
-  </p>
-  <ul>
-    <li>Motor: KA24DE o SR20DET</li>
-    <li>Transmisión: Manual</li>
-    <li>Ventajas: Gran disponibilidad de repuestos, fácil de personalizar, ideal para swaps</li>
-    <li>Precio estimado: $6,000–$12,000 (usado)</li>
-  </ul>
-  <img src="/imagenes/autos/240sx.png" alt="Nissan 240SX" width="1000" height="500">
-</section>
-<section>
-  <h3><b>3. BMW E36 / E46</b></h3>
-  <p>
-    Los BMW E36 y E46 ofrecen potencia, equilibrio y precio accesible. Su suspensión trasera independiente y distribución de peso los hacen ideales para drifting técnico. El E36 es más económico; el E46 ofrece más refinamiento.
-  </p>
-  <ul>
-    <li>Motor: 2.5L–3.0L, hasta 230 HP</li>
-    <li>Transmisión: Manual</li>
-    <li>Ventajas: Excelente manejo, gran durabilidad, estética deportiva</li>
-    <li>Precio estimado: $4,000–$10,000 (usado)</li>
-  </ul>
-  <img src="/imagenes/autos/bmw-e36.png" alt="BMW E36" width="1000" height="500">
-</section>
-
-<section>
-  <h3><b>4. Toyota GT86 / Subaru BRZ / GR86</b></h3>
-  <p>
-    Diseñados para entusiastas del manejo, estos autos ofrecen tracción trasera, bajo centro de gravedad y un chasis perfectamente equilibrado. Son modernos, confiables y listos para derrapar.
-  </p>
-  <ul>
-    <li>Motor: 2.0L Boxer, 200–231 HP</li>
-    <li>Transmisión: Manual o automática con modo manual</li>
-    <li>Ventajas: Ideal para drifting de precisión, estética deportiva, diferencial de deslizamiento limitado</li>
-    <li>Precio estimado: $18,000–$28,000 (usado o nuevo)</li>
-  </ul>
-  <img src="/imagenes/autos/gt86.png" alt="Toyota GT86" width="1000" height="500">
-</section>
-
-<section>
-  <h3><b>5. Nissan 350Z / 370Z</b></h3>
-  <p>
-    Potentes, robustos y con tracción trasera, los Z son favoritos en la escena drift por su motor V6 y facilidad de modificación. El 350Z es más económico; el 370Z ofrece más refinamiento y potencia.
-  </p>
-  <ul>
-    <li>Motor: 3.5L / 3.7L V6, hasta 332 HP</li>
-    <li>Transmisión: Manual</li>
-    <li>Ventajas: Sonido envolvente, buena base para tuning, gran estabilidad</li>
-    <li>Precio estimado: $9,000–$20,000 (usado)</li>
-  </ul>
-  <img src="/imagenes/autos/350z.png" alt="Nissan 350Z" width="1000" height="500">
-</section>
-
-<section>
-  <h3><b>6. Ford Mustang V6/V8</b></h3>
-  <p>
-    Aunque más pesado, el Mustang ofrece una experiencia de drift brutal gracias a su motor trasero y gran torque. Las versiones V6 son más accesibles y aún capaces de derrapar con estilo.
-  </p>
-  <ul>
-    <li>Motor: 3.7L V6 / 5.0L V8</li>
-    <li>Transmisión: Manual</li>
-    <li>Ventajas: Potencia bruta, modo drift en versiones modernas, estética agresiva</li>
-    <li>Precio estimado: $10,000–$30,000 (usado o nuevo)</li>
-  </ul>
-  <img src="/imagenes/autos/mustang.png" alt="Ford Mustang" width="1000" height="500">
-</section>
-
-<section>
-  <h2>🧠 Consejos para elegir tu primer auto de drift</h2>
-  <p>
-    Elegir tu primer auto para drift no es solo cuestión de potencia. Debes considerar factores como facilidad de modificación, disponibilidad de repuestos, confiabilidad mecánica y tu propio nivel de experiencia. Aquí van algunos consejos clave:
-  </p>
-  <ul>
-    <li><b>Tracción trasera (RWD):</b> Es esencial para derrapar con control. Evita tracción delantera.</li>
-    <li><b>Caja manual:</b> Te da control total sobre el torque y la respuesta del vehículo.</li>
-    <li><b>Suspensión ajustable:</b> Permite adaptar el comportamiento del auto a tu estilo de drift.</li>
-    <li><b>Neumáticos económicos:</b> Al principio, usar gomas baratas te permitirá practicar sin miedo a gastar.</li>
-    <li><b>Evita electrónica compleja:</b> Sistemas como ABS avanzado o control de tracción pueden interferir con el derrape.</li>
-    <li><b>Consulta comunidades locales:</b> Grupos de drift pueden ayudarte con consejos, piezas y eventos.</li>
-    <li><b>Empieza con lo que puedas mantener:</b> No necesitas 500 HP para aprender. Un auto bien balanceado vale más que uno potente pero incontrolable.</li>
-    <li><b>Revisa el historial mecánico:</b> Evita autos con problemas de transmisión, diferencial o dirección.</li>
-  </ul>
-</section>
-
-<section>
-  <h2>📎 Enlaces útiles</h2>
-  <ul>
-    <li><a href="https://mlin.es/2024/07/26/los-10-coches-de-drifting-mas-baratos-y-accesibles/" target="_blank">Top 10 autos de drifting baratos – Mlin</a></li>
-    <li><a href="https://www.motoresauto.com/mejores-coches-drift/" target="_blank">Los 14 mejores coches drift del momento – Motores Auto</a></li>
-    <li><a href="https://www.highmotor.com/10-mejores-coches-hacer-drift.html" target="_blank">10 mejores coches para hacer drift – Highmotor</a></li>
-    <li><a href="https://www.kavak.com/ar/blog/los-mejores-autos-para-hacer-drift" target="_blank">Guía de autos para drift – Kavak</a></li>
-    <li><a href="https://www.pruebaderuta.com/coche-para-drift.php" target="_blank">¿Qué coche debería comprar si quiere empezar a hacer drift? – Prueba de Ruta</a></li>
-  </ul>
-</section>
-
-<section>
-  <h2>🔧 Modificaciones esenciales para un auto de drift</h2>
-  <p>
-    Para que un vehículo sea apto para drifting, necesita ciertas modificaciones que mejoran su control, seguridad y capacidad de derrape. Estas adaptaciones no solo optimizan el rendimiento, sino que también protegen el auto durante maniobras exigentes.
-  </p>
-
-  <ul>
-    <li><b>Diferencial autoblocante (LSD):</b> Permite que ambas ruedas traseras giren a la misma velocidad, facilitando el derrape controlado.</li>
-    <li><b>Suspensión ajustable:</b> Mejora la estabilidad, el ángulo de dirección y la respuesta del chasis en curvas.</li>
-    <li><b>Freno de mano hidráulico:</b> Esencial para iniciar derrapes precisos en curvas cerradas.</li>
-    <li><b>Refrigeración adicional:</b> Radiadores mejorados y ventiladores para evitar sobrecalentamiento en sesiones intensas.</li>
-    <li><b>Reducción de peso:</b> Eliminar asientos traseros, paneles innecesarios y usar materiales ligeros mejora la agilidad.</li>
-    <li><b>Refuerzos estructurales:</b> Barras antivuelco y jaulas de seguridad aumentan la rigidez y protegen al piloto.</li>
-    <li><b>Neumáticos de alto desgaste:</b> Permiten derrapes más suaves y controlados sin comprometer la tracción.</li>
-  </ul>
-
-  <img src="/imagenes/drift-setup.png" alt="Modificaciones de drift" width="1000" height="500">
-  
   <section>
-  <h2><b>🎥 Video recomendado</b></h2>
-  <p>
-    El siguiente video explica cada modificación con ejemplos reales, desde el diferencial hasta el sistema de frenos:
-  </p>
-  <iframe width="870" height="500" src="https://www.youtube.com/embed/d3UKPrWq_OM" title="¿COMO PREPARAR UN AUTO DE DRIFT?" frameborder="0" allowfullscreen></iframe>
-  <p>
-    Mira <a href="https://www.youtube.com/watch?v=d3UKPrWq_OM" target="_blank">¿COMO PREPARAR UN AUTO DE DRIFT ...</a> para entender cómo construir un auto de drift desde cero, incluyendo seguridad, suspensión, refrigeración y más.
-  </p>
+    <h2>Autos actuales y accesibles para Drift</h2>
+    <p>El drifting es una disciplina que exige precisión, control y un vehículo que responda con agilidad...</p>
+
+    <!-- Mazda MX-5 Miata -->
+    <h3><b>1. Mazda MX-5 Miata</b></h3>
+    <p>Ligero, equilibrado y con tracción trasera...</p>
+    <ul>
+      <li>Motor: 2.0L, 184 HP</li>
+      <li>Transmisión: Manual de 6 velocidades</li>
+      <li>Ventajas: Bajo costo de mantenimiento...</li>
+      <li>Precio estimado: $8,000–$15,000 (usado)</li>
+    </ul>
+    <img src="/AUDITORIA/imagenes/autos/miata.png" alt="Mazda MX-5 Miata" width="1000" height="500">
+
+    <!-- Nissan 240SX -->
+    <h3><b>2. Nissan 240SX</b></h3>
+    <p>Ícono del drift callejero y profesional...</p>
+    <ul>
+      <li>Motor: KA24DE o SR20DET</li>
+      <li>Transmisión: Manual</li>
+      <li>Ventajas: Gran disponibilidad de repuestos...</li>
+      <li>Precio estimado: $6,000–$12,000 (usado)</li>
+    </ul>
+    <img src="/AUDITORIA/imagenes/autos/240sx.png" alt="Nissan 240SX" width="1000" height="500">
+
+    <!-- BMW E36 / E46 -->
+    <h3><b>3. BMW E36 / E46</b></h3>
+    <p>Ofrecen potencia, equilibrio y precio accesible...</p>
+    <ul>
+      <li>Motor: 2.5L–3.0L, hasta 230 HP</li>
+      <li>Transmisión: Manual</li>
+      <li>Ventajas: Excelente manejo...</li>
+      <li>Precio estimado: $4,000–$10,000 (usado)</li>
+    </ul>
+    <img src="/AUDITORIA/imagenes/autos/bmw-e36.png" alt="BMW E36" width="1000" height="500">
+
+    <!-- Toyota GT86 / Subaru BRZ / GR86 -->
+    <h3><b>4. Toyota GT86 / Subaru BRZ / GR86</b></h3>
+    <p>Diseñados para entusiastas del manejo...</p>
+    <ul>
+      <li>Motor: 2.0L Boxer, 200–231 HP</li>
+      <li>Transmisión: Manual o automática</li>
+      <li>Ventajas: Ideal para drifting de precisión...</li>
+      <li>Precio estimado: $18,000–$28,000</li>
+    </ul>
+    <img src="/AUDITORIA/imagenes/autos/gt86.png" alt="Toyota GT86" width="1000" height="500">
+
+    <!-- Nissan 350Z / 370Z -->
+    <h3><b>5. Nissan 350Z / 370Z</b></h3>
+    <p>Potentes, robustos y con tracción trasera...</p>
+    <ul>
+      <li>Motor: 3.5L / 3.7L V6, hasta 332 HP</li>
+      <li>Transmisión: Manual</li>
+      <li>Ventajas: Sonido envolvente...</li>
+      <li>Precio estimado: $9,000–$20,000</li>
+    </ul>
+    <img src="/AUDITORIA/imagenes/autos/350z.png" alt="Nissan 350Z" width="1000" height="500">
+
+    <!-- Ford Mustang -->
+    <h3><b>6. Ford Mustang V6/V8</b></h3>
+    <p>El Mustang ofrece una experiencia de drift brutal...</p>
+    <ul>
+      <li>Motor: 3.7L V6 / 5.0L V8</li>
+      <li>Transmisión: Manual</li>
+      <li>Ventajas: Potencia bruta, modo drift...</li>
+      <li>Precio estimado: $10,000–$30,000</li>
+    </ul>
+    <img src="/AUDITORIA/imagenes/autos/mustang.png" alt="Ford Mustang" width="1000" height="500">
+  </section>
+
+  <section>
+    <h2>🧠 Consejos para elegir tu primer auto de drift</h2>
+    <ul>
+      <li><b>Tracción trasera (RWD):</b> Es esencial para derrapar con control.</li>
+      <li><b>Caja manual:</b> Te da control total sobre el torque.</li>
+      <li><b>Suspensión ajustable:</b> Permite adaptar el comportamiento del auto.</li>
+      <li><b>Neumáticos económicos:</b> Practica sin miedo a gastar.</li>
+      <li><b>Evita electrónica compleja:</b> Puede interferir con el derrape.</li>
+      <li><b>Consulta comunidades locales:</b> Grupos de drift pueden ayudarte.</li>
+      <li><b>Empieza con lo que puedas mantener:</b> Un auto bien balanceado vale más.</li>
+      <li><b>Revisa el historial mecánico:</b> Evita problemas ocultos.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📎 Enlaces útiles</h2>
+    <ul>
+      <li><a href="https://mlin.es/2024/07/26/los-10-coches-de-drifting-mas-baratos-y-accesibles/" target="_blank">Top 10 autos de drifting baratos – Mlin</a></li>
+      <li><a href="https://www.motoresauto.com/mejores-coches-drift/" target="_blank">Los 14 mejores coches drift – Motores Auto</a></li>
+      <li><a href="https://www.highmotor.com/10-mejores-coches-hacer-drift.html" target="_blank">10 mejores coches para hacer drift – Highmotor</a></li>
+      <li><a href="https://www.kavak.com/ar/blog/los-mejores-autos-para-hacer-drift" target="_blank">Guía de autos para drift – Kavak</a></li>
+      <li><a href="https://www.pruebaderuta.com/coche-para-drift.php" target="_blank">¿Qué coche debería comprar? – Prueba de Ruta</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🔧 Modificaciones esenciales para un auto de drift</h2>
+    <ul>
+      <li><b>Diferencial autoblocante (LSD):</b> Facilita el derrape controlado.</li>
+      <li><b>Suspensión ajustable:</b> Mejora estabilidad y respuesta.</li>
+      <li><b>Freno de mano hidráulico:</b> Inicia derrapes precisos.</li>
+      <li><b>Refrigeración adicional:</b> Evita sobrecalentamiento.</li>
+      <li><b>Reducción de peso:</b> Mejora agilidad.</li>
+      <li><b>Refuerzos estructurales:</b> Aumentan rigidez y seguridad.</li>
+      <li><b>Neumáticos de alto desgaste:</b> Derrapes suaves y controlados.</li>
+    </ul>
+    <img src="/AUDITORIA/imagenes/drift-setup.png" alt="Modificaciones de drift" width="1000" height="500">
+  </section>
+
+    <section>
+    <h2><b>🎥 Video recomendado</b></h2>
+    <p>
+      El siguiente video explica cada modificación con ejemplos reales, desde el diferencial hasta el sistema de frenos:
+    </p>
+    <iframe width="870" height="500" src="https://www.youtube.com/embed/d3UKPrWq_OM" title="¿COMO PREPARAR UN AUTO DE DRIFT?" frameborder="0" allowfullscreen></iframe>
+    <p>
+      Mira <a href="https://www.youtube.com/watch?v=d3UKPrWq_OM" target="_blank">¿COMO PREPARAR UN AUTO DE DRIFT</a> para entender cómo construir un auto de drift desde cero, incluyendo seguridad, suspensión, refrigeración y más.
+    </p>
+  </section>
 
   <section>
     <h2><b>🧩 Conclusión</b></h2>
-  <p>
-    Preparar un auto para drift no se trata solo de añadir potencia o estética agresiva. Es un proceso técnico que requiere entender cómo cada componente afecta el comportamiento del vehículo en situaciones de derrape. Desde el diferencial hasta la suspensión, cada modificación cumple una función específica que mejora el control, la seguridad y la experiencia del piloto.
-  </p>
-
-  <p>
-    Si bien existen muchas configuraciones posibles, lo más importante es adaptar el auto a tu nivel de habilidad, al tipo de pista y a tus objetivos personales. Un buen auto de drift no es necesariamente el más caro, sino el que responde con precisión, te permite aprender y evolucionar, y te conecta con la comunidad que comparte esta pasión.
-  </p>
-
-  <p>
-    Ya sea que estés comenzando con un modelo accesible o construyendo una máquina personalizada, cada paso en la preparación de tu auto es parte de una historia que se escribe sobre el asfalto. Derrapar no es solo técnica: es arte, cultura y evolución constante.
-  </p>
-
-</section>
-
+    <p>
+      Preparar un auto para drift no se trata solo de añadir potencia o estética agresiva. Es un proceso técnico que requiere entender cómo cada componente afecta el comportamiento del vehículo en situaciones de derrape.
+    </p>
+    <p>
+      Si bien existen muchas configuraciones posibles, lo más importante es adaptar el auto a tu nivel de habilidad, al tipo de pista y a tus objetivos personales.
+    </p>
+    <p>
+      Ya sea que estés comenzando con un modelo accesible o construyendo una máquina personalizada, cada paso en la preparación de tu auto es parte de una historia que se escribe sobre el asfalto. Derrapar no es solo técnica: es arte, cultura y evolución constante.
+    </p>
+  </section>
+</body>
+</html>

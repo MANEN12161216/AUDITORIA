@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>DRIFT</title>
-  <link rel="icon" href="/imagenes/drift.png" type="image/png">
-  <script src="/js/ventanas.js" defer></script>
-  <link rel="stylesheet" href="/css/estilos.css">
-  <script src="/js/interaccion.js" defer></script>
+  <link rel="icon" href="/AUDITORIA/imagenes/drift.png" type="image/png">
+  <script src="/AUDITORIA/js/ventanas.js" defer></script>
+  <link rel="stylesheet" href="/AUDITORIA/css/estilos.css">
+  <script src="/AUDITORIA/js/interaccion.js" defer></script>
 </head>
 <body data-tab="drift">
-<div id="menu-visual-dinamico"></div>
+  <div id="menu-visual-dinamico"></div>
 
   <script>
-    fetch('/componentes/menu-visual.html')
+    fetch('/AUDITORIA/componentes/menu-visual.html')
       .then(res => res.text())
       .then(html => {
         document.getElementById('menu-visual-dinamico').innerHTML = html;
@@ -22,94 +22,74 @@
   <header><h1>Historia Del Drift y Evolución</h1></header>
 
   <section>
-  <h2><b>🏆 Pilotos legendarios y actuales del Drift</b></h2>
-  <p>
-    El drift no sería lo que es hoy sin los pilotos que lo han llevado al límite. Desde pioneros que lo convirtieron en arte hasta campeones modernos que lo perfeccionan en cada curva, estos nombres han marcado la historia del derrape con estilo, técnica y pasión.
-  </p>
+    <h2><b>🏆 Pilotos legendarios y actuales del Drift</b></h2>
+    <p>
+      El drift no sería lo que es hoy sin los pilotos que lo han llevado al límite...
+    </p>
 
-  <h3><b>1. Keiichi Tsuchiya (Japón)</b></h3>
-  <p>
-    Nacido en 1956, Keiichi Tsuchiya es considerado el padre del drift moderno. Apodado “Drift King”, comenzó su carrera en los touge japoneses y llevó el derrape a los circuitos profesionales. Fue consultor técnico del anime <i>Initial D</i> y supervisor de escenas en <i>Tokyo Drift</i>. Fundó el D1 Grand Prix y ganó en Le Mans. Su estilo fluido y controlado inspiró generaciones.
-  </p>
-  <ul>
-    <li>Auto icónico: Toyota AE86 Trueno</li>
-  </ul>
-  <img width="1000" src="/imagenes/pilotos/tsuchiya.png" alt="Keiichi Tsuchiya Drift King" width="800">
-  <p><a href="https://es.wikipedia.org/wiki/Keiichi_Tsuchiya" target="_blank">Biografía completa</a></p>
+    <h3><b>1. Keiichi Tsuchiya (Japón)</b></h3>
+    <p>...Fundó el D1 Grand Prix y ganó en Le Mans...</p>
+    <ul><li>Auto icónico: Toyota AE86 Trueno</li></ul>
+    <img width="1000" src="/AUDITORIA/imagenes/pilotos/tsuchiya.png" alt="Keiichi Tsuchiya Drift King">
+    <p><a href="https://es.wikipedia.org/wiki/Keiichi_Tsuchiya" target="_blank">Biografía completa</a></p>
   </section>
 
-<section>
-  <h3><b>2. Daigo Saito (Japón)</b></h3>
-  <p>
-    Nacido en 1980, Daigo Saito es uno de los pilotos más extremos del drift profesional. Ganó tanto D1GP como Formula Drift USA. Fundador de Fat Five Racing, ha construido autos únicos como Lamborghinis y GR Supras para drift. Su estilo agresivo y control milimétrico lo han convertido en leyenda.
-  </p>
-  <ul>
-    <li>Autos icónicos: Toyota JZX100, Lexus SC430, Lamborghini Murciélago Drift Spec</li>
-  </ul>
-  <img width="1000" src="/imagenes/pilotos/daigo.png" alt="Daigo Saito drifting" width="800">
-  <p><a href="https://en.wikipedia.org/wiki/Daigo_Saito" target="_blank">Biografía completa</a></p>
-</section>
+  <section>
+    <h3><b>2. Daigo Saito (Japón)</b></h3>
+    <p>...Fundador de Fat Five Racing...</p>
+    <ul><li>Autos icónicos: Toyota JZX100, Lexus SC430, Lamborghini Murciélago Drift Spec</li></ul>
+    <img width="1000" src="/AUDITORIA/imagenes/pilotos/daigo.png" alt="Daigo Saito drifting">
+    <p><a href="https://en.wikipedia.org/wiki/Daigo_Saito" target="_blank">Biografía completa</a></p>
+  </section>
 
-<section>
-  <h3><b>3. James Deane (Irlanda)</b></h3>
-  <p>
-    Nacido en 1991, James Deane es conocido como “The Machine” por su precisión. Campeón de Formula Drift en 2017, 2018, 2019 y 2024. Pilota un Nissan Silvia S15 con motor 2JZ y un Ford Mustang RTR. Tiene el récord de más podios consecutivos en la historia del drift.
-  </p>
-  <ul>
-    <li>Auto icónico: Nissan Silvia S15</li>
-  </ul>
-  <img width="1000" src="/imagenes/pilotos/deane.png" alt="James Deane drifting" width="800">
-  <p><a href="https://en.wikipedia.org/wiki/James_Deane_(drift_driver)" target="_blank">Biografía completa</a></p>
-</section>
+  <section>
+    <h3><b>3. James Deane (Irlanda)</b></h3>
+    <p>...Tiene el récord de más podios consecutivos...</p>
+    <ul><li>Auto icónico: Nissan Silvia S15</li></ul>
+    <img width="1000" src="/AUDITORIA/imagenes/pilotos/deane.png" alt="James Deane drifting">
+    <p><a href="https://en.wikipedia.org/wiki/James_Deane_(drift_driver)" target="_blank">Biografía completa</a></p>
+  </section>
 
-<section>
-  <h3><b>4. Fredric Aasbø (Noruega)</b></h3>
-  <p>
-    Nacido en 1985, Fredric Aasbø es tres veces campeón de Formula Drift. Piloto con más victorias en la historia de la liga. Pilota el Toyota GR Supra de Papadakis Racing con más de 1000 HP. También ha trabajado como doble de riesgo en cine y campañas publicitarias.
-  </p>
-  <ul>
-    <li>Auto icónico: Toyota GR Supra</li>
-  </ul>
-  <img width="1000" src="/imagenes/pilotos/aasbo.png" alt="Fredric Aasbo Supra drift" width="800">
-  <p><a href="https://en.wikipedia.org/wiki/Fredric_Aasb%C3%B8" target="_blank">Biografía completa</a></p>
-</section>
+  <section>
+    <h3><b>4. Fredric Aasbø (Noruega)</b></h3>
+    <p>...Pilota el Toyota GR Supra de Papadakis Racing...</p>
+    <ul><li>Auto icónico: Toyota GR Supra</li></ul>
+    <img width="1000" src="/AUDITORIA/imagenes/pilotos/aasbo.png" alt="Fredric Aasbo Supra drift">
+    <p><a href="https://en.wikipedia.org/wiki/Fredric_Aasb%C3%B8" target="_blank">Biografía completa</a></p>
+  </section>
 
-<section>
-  <h3><b>5. Conor Shanahan (Irlanda)</b></h3>
-  <p>
-    Nacido en 2003, Conor Shanahan es un joven prodigio del drift europeo. Campeón del Drift Masters European Championship en 2023. Pilota un Toyota GT86 modificado con más de 700 HP. Atleta oficial de Red Bull desde los 16 años.
-  </p>
-  <ul>
-    <li>Auto icónico: Toyota GT86 modificado</li>
-  </ul>
-  <img width="1000" src="/imagenes/pilotos/shanahan.png" alt="Conor Shanahan drifting" width="800">
-  <p><a href="https://www.redbull.com/ie-en/athlete/conor-shanahan" target="_blank">Biografía oficial</a></p>
-</section>
+  <section>
+    <h3><b>5. Conor Shanahan (Irlanda)</b></h3>
+    <p>...Campeón del Drift Masters European Championship en 2023...</p>
+    <ul><li>Auto icónico: Toyota GT86 modificado</li></ul>
+    <img width="1000" src="/AUDITORIA/imagenes/pilotos/shanahan.png" alt="Conor Shanahan drifting">
+    <p><a href="https://www.redbull.com/ie-en/athlete/conor-shanahan" target="_blank">Biografía oficial</a></p>
+  </section>
 
-<section>
-  <h3><b>6. Adam LZ (EE.UU.)</b></h3>
-  <p>
-    Nacido en 1995, Adam LZ es influencer y piloto profesional. Comenzó en BMX y pasó al drift en 2015. Pilota un Nissan Silvia S15 con motor 2JZ y un Ford Mustang RTR de 1200 HP. Fundador de LZMFG y Drift HQ, con fuerte presencia en eventos y medios.
-  </p>
-  <ul>
-    <li>Autos icónicos: Nissan S15, Ford Mustang RTR</li>
-  </ul>
-  <img width="1000" src="/imagenes/pilotos/adamlz.png" alt="Adam LZ Mustang RTR" width="800">
-  <p><a  href="https://wikitia.com/wiki/Adam_Lizotte-Zeisler" target="_blank">Biografía completa</a></p>
-</section>
+  <section>
+    <h3><b>6. Adam LZ (EE.UU.)</b></h3>
+    <p>...Fundador de LZMFG y Drift HQ...</p>
+    <ul><li>Autos icónicos: Nissan S15, Ford Mustang RTR</li></ul>
+    <img width="1000" src="/AUDITORIA/imagenes/pilotos/adamlz.png" alt="Adam LZ Mustang RTR">
+    <p><a href="https://wikitia.com/wiki/Adam_Lizotte-Zeisler" target="_blank">Biografía completa</a></p>
+  </section>
 
-<section>
-  <h2><b>🎥 Video recomendado</b>></h2>
-  <iframe width="930" height="500" src="https://www.youtube.com/embed/pOLNgqwJ1p4" title="Top 5 Pilotos de Drift en 2025" frameborder="0" allowfullscreen></iframe>
-  <p>
-    Este video presenta a los cinco pilotos más destacados del drift en 2025, incluyendo a James Deane, Daigo Saito, Conor Shanahan, Fredric Aasbø y Adam LZ. Ideal para ver sus estilos en acción y entender por qué dominan el mundo del derrape.
-  </p>
-<section>
-  <h2><b>🧩 Conclusión</b></h2>
-  <p>
-    Estos pilotos no solo dominan el volante: han definido lo que significa derrapar con estilo. Desde las montañas de Japón hasta los circuitos internacionales, cada uno ha dejado una huella en la historia del drift. Sus autos, sus técnicas y su pasión han inspirado a miles de personas a entrar en este mundo de precisión, adrenalina y arte sobre ruedas.
-  </p>
-  <p>
-    Ya sea que admires la elegancia de James Deane, la brutalidad de Daigo Saito o la evolución digital de Adam LZ, todos ellos representan una forma única de entender el derrape. Y tú, Manaen, estás construyendo un espacio donde esa historia se cuenta con claridad, profundidad y visuales que hacen que el asfalto cobre vida.
-  </p>
-</section>
+  <section>
+    <h2><b>🎥 Video recomendado</b></h2>
+    <iframe width="930" height="500" src="https://www.youtube.com/embed/pOLNgqwJ1p4" title="Top 5 Pilotos de Drift en 2025" frameborder="0" allowfullscreen></iframe>
+    <p>
+      Este video presenta a los cinco pilotos más destacados del drift en 2025, incluyendo a James Deane, Daigo Saito, Conor Shanahan, Fredric Aasbø y Adam LZ. Ideal para ver sus estilos en acción y entender por qué dominan el mundo del derrape.
+    </p>
+  </section>
+
+  <section>
+    <h2><b>🧩 Conclusión</b></h2>
+    <p>
+      Estos pilotos no solo dominan el volante: han definido lo que significa derrapar con estilo...
+    </p>
+    <p>
+      Ya sea que admires la elegancia de James Deane, la brutalidad de Daigo Saito o la evolución digital de Adam LZ...
+    </p>
+  </section>
+</body>
+</html>

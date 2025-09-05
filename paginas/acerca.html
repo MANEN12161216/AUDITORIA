@@ -3,86 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <title>DRIFT</title>
-  <link rel="icon" href="/imagenes/drift.png" type="image/png">
-  <script src="/js/ventanas.js" defer></script>
-  <link rel="stylesheet" href="/css/estilos.css">
-  <script src="/js/interaccion.js" defer></script>
+  <link rel="icon" href="/AUDITORIA/imagenes/drift.png" type="image/png">
+  <script src="/AUDITORIA/js/ventanas.js" defer></script>
+  <link rel="stylesheet" href="/AUDITORIA/css/estilos.css">
+  <script src="/AUDITORIA/js/interaccion.js" defer></script>
 </head>
 <body data-tab="drift">
-<div id="menu-visual-dinamico"></div>
+  <div id="menu-visual-dinamico"></div>
 
   <script>
-    fetch('/componentes/menu-visual.html')
+    fetch('/AUDITORIA/componentes/menu-visual.html')
       .then(res => res.text())
       .then(html => {
         document.getElementById('menu-visual-dinamico').innerHTML = html;
       });
   </script>
 
-  <header><h1>Hacerca del Creador</h1></header>
+  <header><h1>Acerca del Creador</h1></header>
 
-<section>
-  <h2>👤 Acerca de</h2>
-  <p><b>Nombre:</b> Alexander Manaen Vasquez Rivera</p>
-  <p><b>Grado:</b> Bachillerato Técnico Bocacional en Infraestructura Tecnológica y Servicios informaticos</p>
-  <p><b>Año de cursado:</b> 3° año, sección A</p>
+  <section>
+    <h2>👤 Acerca de</h2>
+    <p><b>Nombre:</b> Alexander Manaen Vasquez Rivera</p>
+    <p><b>Grado:</b> Bachillerato Técnico Vocacional en Infraestructura Tecnológica y Servicios Informáticos</p>
+    <p><b>Año de cursado:</b> 3° año, sección A</p>
 
-  <p>
-    Este sitio web ha sido desarrollado como parte de un proyecto académico que fusiona diseño, programación y narrativa visual. El objetivo es presentar contenido técnico y cultural de forma clara, interactiva y profesional. Cada sección ha sido construida con precisión, desde la historia del drift hasta las técnicas, autos, pilotos y auditoría digital.
-  </p>
+    <p>
+      Este sitio web ha sido desarrollado como parte de un proyecto académico que fusiona diseño, programación y narrativa visual. El objetivo es presentar contenido técnico y cultural de forma clara, interactiva y profesional. Cada sección ha sido construida con precisión, desde la historia del drift hasta las técnicas, autos, pilotos y auditoría digital.
+    </p>
 
-  <p>
-    Las tecnologías utilizadas incluyen HTML, CSS y JavaScript, con enfoque modular y visualmente adaptativo. El diseño busca reflejar la pasión por el automovilismo, la ingeniería visual y la cultura digital, todo desde el corazón de El instituno Nacional De Armenia, El Salvador.
-  </p>
+    <p>
+      Las tecnologías utilizadas incluyen HTML, CSS y JavaScript, con enfoque modular y visualmente adaptativo. El diseño busca reflejar la pasión por el automovilismo, la ingeniería visual y la cultura digital, todo desde el corazón del Instituto Nacional de Armenia, El Salvador.
+    </p>
 
-  <p>
-    Agradezco a mi docente Milton Contreras y a quienes me han inspirado a crear algo que no solo informa, sino que también conecta emocionalmente con quienes lo visitan.
-  </p>
-
-  <h2>📍 Ubicación del autor</h2>
-  <p>
-    Este sitio nace desde <b>El instituno Nacional De Armenia,Sonsonate, El Salvador</b>, una escuela vibrante con fuerte identidad cultural y tecnológica. Puedes explorar el lugar desde el siguiente mapa interactivo:
-  </p>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.5152211375726!2d-89.49849712580033!3d13.747774286643686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62da6ba47be677%3A0xc214876d24f20dbd!2sInstituto%20Nacional%20de%20Armenia!5e0!3m2!1ses!2ssv!4v1756860415089!5m2!1ses!2ssv" width="940" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</section>
-
-<section>
-  <h2>🎙️ Mensaje DE Autor</h2>
-  <p>
-    Escucha mi mensaje sobre el proceso creativo y lo que significa para mí haber construido este sitio desde cero:
-  </p>
-  <audio controls>
-    <source src="audio/mensaje.mp3" type="audio/mpeg">
-    Tu navegador no soporta audio HTML5.
-  </audio>
+    <p>
+      Agradezco a mi docente Milton Contreras y a quienes me han inspirado a crear algo que no solo informa, sino que también conecta emocionalmente con quienes lo visitan.
+    </p>
   </section>
 
-<section>
-  <h2>📚 Webliografía general del proyecto</h2>
+  <section>
+    <h2>📍 Ubicación del autor</h2>
+    <p>
+      Este sitio nace desde <b>Instituto Nacional de Armenia, Sonsonate, El Salvador</b>, una escuela vibrante con fuerte identidad cultural y tecnológica. Puedes explorar el lugar desde el siguiente mapa interactivo:
+    </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.5152211375726!2d-89.49849712580033!3d13.747774286643686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62da6ba47be677%3A0xc214876d24f20dbd!2sInstituto%20Nacional%20de%20Armenia!5e0!3m2!1ses!2ssv!4v1756860415089!5m2!1ses!2ssv" width="940" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <section>
+    <h2>🎙️ Mensaje del autor</h2>
+    <p>
+      Escucha mi mensaje sobre el proceso creativo y lo que significa para mí haber construido este sitio desde cero:
+    </p>
+    <audio controls>
+      <source src="/AUDITORIA/audio/mensaje.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio HTML5.
+    </audio>
+  </section>
+
+  <section>
+    <h2>📚 Webliografía general del proyecto</h2>
     <ul>
-      <li><b>Wikipedia – Drifting</b> – Historia, técnica y evolución del drift como disciplina profesional  
-        <br><a href="https://es.wikipedia.org/wiki/Drifting" target="_blank">https://es.wikipedia.org/wiki/Drifting</a></li>
+      <li><b>Wikipedia – Drifting</b><br>
+        <a href="https://es.wikipedia.org/wiki/Drifting" target="_blank">https://es.wikipedia.org/wiki/Drifting</a></li>
 
-      <li><b>Red Bull – Historia del drifting</b> – Orígenes, campeonatos y pilotos destacados  
-        <br><a href="https://www.redbull.com/mx-es/la-historia-del-drifting" target="_blank">https://www.redbull.com/mx-es/la-historia-del-drifting</a></li>
+      <li><b>Red Bull – Historia del drifting</b><br>
+        <a href="https://www.redbull.com/mx-es/la-historia-del-drifting" target="_blank">https://www.redbull.com/mx-es/la-historia-del-drifting</a></li>
 
-      <li><b>Formula Drift – Perfiles oficiales</b> – Biografías de James Deane, Fredric Aasbø, Adam LZ y Conor Shanahan  
-        <br><a href="https://www.formulad.com/drivers" target="_blank">https://www.formulad.com/drivers</a></li>
+      <li><b>Formula Drift – Perfiles oficiales</b><br>
+        <a href="https://www.formulad.com/drivers" target="_blank">https://www.formulad.com/drivers</a></li>
 
-      <li><b>AuditBoard</b> – Software de auditoría empresarial  
-        <br><a href="https://www.auditboard.com/" target="_blank">https://www.auditboard.com/</a></li>
+      <li><b>AuditBoard</b><br>
+        <a href="https://www.auditboard.com/" target="_blank">https://www.auditboard.com/</a></li>
 
-      <li><b>Autobild</b> – Cómo se graban los videos de drift  
-        <br><a href="https://www.autobild.es/reportajes/como-se-graban-videos-drift-2018" target="_blank">https://www.autobild.es/reportajes/como-se-graban-videos-drift-2018</a></li>
+      <li><b>Autobild</b><br>
+        <a href="https://www.autobild.es/reportajes/como-se-graban-videos-drift-2018" target="_blank">https://www.autobild.es/reportajes/como-se-graban-videos-drift-2018</a></li>
 
-      <li><b>Autonocion</b> – Giro de 360° en drift profesional  
-        <br><a href="https://www.autonocion.com/drift-360-grados/" target="_blank">https://www.autonocion.com/drift-360-grados/</a></li>
+      <li><b>Autonocion</b><br>
+        <a href="https://www.autonocion.com/drift-360-grados/" target="_blank">https://www.autonocion.com/drift-360-grados/</a></li>
 
-      <li><b>SomosLibres.org</b> – Herramientas libres para auditoría  
-        <br><a href="https://www.somoslibres.org/modules.php?name=News&file=article&sid=10123" target="_blank">https://www.somoslibres.org/modules.php?name=News&file=article&sid=10123</a></li>
+      <li><b>SomosLibres.org</b><br>
+        <a href="https://www.somoslibres.org/modules.php?name=News&file=article&sid=10123" target="_blank">https://www.somoslibres.org/modules.php?name=News&file=article&sid=10123</a></li>
 
-      <li><b>YouTube – Alejandro Chávez Castillo</b> – Proceso de auditoría explicado  
-        <br><a href="https://www.youtube.com/watch?v=EjemploVideoAuditoria" target="_blank">https://www.youtube.com/watch?v=EjemploVideoAuditoria</a></li>
+      <li><b>YouTube – Alejandro Chávez Castillo</b><br>
+        <a href="https://www.youtube.com/watch?v=EjemploVideoAuditoria" target="_blank">https://www.youtube.com/watch?v=EjemploVideoAuditoria</a></li>
     </ul>
-  </div>
-</section>
+  </section>
+</body>
+</html>

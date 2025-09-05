@@ -3,92 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <title>Auditoría Web</title>
-  <link rel="icon" href="/imagenes/auditoria.png" type="image/png">
-  <link rel="stylesheet" href="/css/estilos.css">
-  <script src="/js/ventanas.js" defer></script>
-  <script src="/js/interaccion.js" defer></script>
+  <link rel="icon" href="/AUDITORIA/imagenes/auditoria.png" type="image/png">
+  <link rel="stylesheet" href="/AUDITORIA/css/estilos.css">
+  <script src="/AUDITORIA/js/ventanas.js" defer></script>
+  <script src="/AUDITORIA/js/interaccion.js" defer></script>
 </head>
 <body data-tab="auditoria">
-<div id="menu-visual-dinamico"></div>
- <script>
-    fetch('/componentes/menu-visual.html')
+  <div id="menu-visual-dinamico"></div>
+  <script>
+    fetch('/AUDITORIA/componentes/menu-visual.html')
       .then(res => res.text())
       .then(html => {
         document.getElementById('menu-visual-dinamico').innerHTML = html;
       });
   </script>
-  
+
   <header><h1>Auditoría Web de Sistemas</h1></header>
 
-<section>
-  <h2>Normativas y Estándares en Auditoría Web</h2>
-  <p>
-    Las <b>normativas y estándares de auditoría web</b> son marcos técnicos y legales que establecen cómo debe llevarse a cabo una auditoría digital de forma profesional, segura y confiable. Estos lineamientos permiten que los procesos de evaluación se realicen con criterios uniformes, garantizando la calidad del análisis, la protección de los datos y el cumplimiento de obligaciones legales.
-  </p>
+  <section>
+    <h2>Normativas y Estándares en Auditoría Web</h2>
+    <p>
+      Las <b>normativas y estándares de auditoría web</b> son marcos técnicos y legales que establecen cómo debe llevarse a cabo una auditoría digital de forma profesional, segura y confiable. Estos lineamientos permiten que los procesos de evaluación se realicen con criterios uniformes, garantizando la calidad del análisis, la protección de los datos y el cumplimiento de obligaciones legales.
+    </p>
 
-  <p>
-    En un entorno digital cada vez más regulado, las auditorías web no pueden realizarse sin considerar las normativas vigentes. Estas incluyen estándares internacionales, guías técnicas, marcos de control y principios éticos que deben ser respetados por auditores, desarrolladores y responsables de sistemas.
-  </p>
+    <p>
+      En un entorno digital cada vez más regulado, las auditorías web no pueden realizarse sin considerar las normativas vigentes. Estas incluyen estándares internacionales, guías técnicas, marcos de control y principios éticos que deben ser respetados por auditores, desarrolladores y responsables de sistemas.
+    </p>
 
-  <h3>🌐 Principales estándares internacionales</h3>
-  <ul>
-    <li><b>ISO/IEC 27001:</b> Norma internacional para la gestión de seguridad de la información. Establece requisitos para proteger datos, gestionar riesgos y asegurar la confidencialidad, integridad y disponibilidad de los sistemas.</li>
-    <li><b>COBIT (Control Objectives for Information and Related Technologies):</b> Marco de gobierno y gestión de TI que define objetivos de control, buenas prácticas y métricas para auditar procesos tecnológicos.</li>
-    <li><b>NIST SP 800-53:</b> Publicación del Instituto Nacional de Estándares y Tecnología de EE.UU. que establece controles de seguridad para sistemas de información federales y privados.</li>
-    <li><b>OWASP ASVS:</b> Estándar de verificación de seguridad para aplicaciones web. Proporciona una lista de requisitos técnicos que pueden ser auditados para validar la robustez de una aplicación.</li>
-    <li><b>ISACA IT Audit Framework:</b> Guía profesional para auditores de sistemas, desarrollada por ISACA, que incluye principios éticos, metodologías y estándares de calidad.</li>
-  </ul>
-</section>
-
-<section>
-  <h3>📋 Normas de auditoría generalmente aceptadas (GAAS)</h3>
-  <p>
-    Las <b>GAAS</b> son normas profesionales que definen cómo debe conducirse una auditoría en cualquier contexto, incluyendo el digital. Estas normas establecen principios como independencia, objetividad, documentación adecuada, evidencia suficiente y comunicación clara de resultados. Aunque nacieron en el ámbito financiero, hoy se aplican también en auditorías informáticas y web.
-  </p>
-</section>
-
-<section>
-  <h3>📘 Normas Internacionales de Auditoría (NIAs)</h3>
-  <p>
-    Las <b>NIAs</b>, emitidas por el International Auditing and Assurance Standards Board (IAASB), definen los requisitos técnicos y éticos que debe seguir un auditor profesional. Incluyen normas como:
-  </p>
-  <ul>
-    <li><b>NIA 200:</b> Objetivos generales del auditor independiente y conducción de una auditoría.</li>
-    <li><b>NIA 315:</b> Identificación y evaluación de riesgos de error material.</li>
-    <li><b>NIA 330:</b> Respuesta del auditor a los riesgos evaluados.</li>
-    <li><b>NIA 500:</b> Evidencia de auditoría.</li>
-    <li><b>NIA 700:</b> Formación de la opinión y emisión del informe de auditoría.</li>
-  </ul>
-</section>
-
-<section>
-  <h3>🧠 Importancia de aplicar normativas en auditorías web</h3>
-  <ul>
-    <li>Garantiza que el proceso de auditoría sea profesional, ético y legalmente válido.</li>
-    <li>Permite comparar resultados entre distintos sitios y organizaciones.</li>
-    <li>Facilita la comunicación entre auditores, desarrolladores y responsables técnicos.</li>
-    <li>Protege la privacidad de los usuarios y la integridad de los sistemas.</li>
-    <li>Evita sanciones legales por incumplimiento de regulaciones como GDPR o HIPAA.</li>
-  </ul>
-</section>
-
-<section>
-  <h3>📎 Recursos y enlaces útiles</h3>
-  <ul>
-    <li><a href="https://www.iso.org/isoiec-27001-information-security.html" target="_blank">ISO/IEC 27001 – Gestión de seguridad de la información</a></li>
-    <li><a href="https://www.isaca.org/resources/cobit" target="_blank">COBIT – Marco de gobierno de TI por ISACA</a></li>
-    <li><a href="https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final" target="_blank">NIST SP 800-53 – Controles de seguridad</a></li>
-    <li><a href="https://owasp.org/www-project-application-security-verification-standard/" target="_blank">OWASP ASVS – Estándar de verificación de seguridad</a></li>
-    <li><a href="https://www.ifac.org/system/files/publications/files/ISA-200.pdf" target="_blank">NIA 200 – Objetivos generales del auditor</a></li>
-    <li><a href="https://servernet.com.ar/normas-internacionales-de-auditoria-informatica/" target="_blank">Artículo sobre normas internacionales de auditoría informática</a></li>
-  </ul>
+    <h3>🌐 Principales estándares internacionales</h3>
+    <ul>
+      <li><b>ISO/IEC 27001:</b> Norma internacional para la gestión de seguridad de la información.</li>
+      <li><b>COBIT:</b> Marco de gobierno y gestión de TI por ISACA.</li>
+      <li><b>NIST SP 800-53:</b> Controles de seguridad para sistemas federales y privados.</li>
+      <li><b>OWASP ASVS:</b> Estándar de verificación de seguridad para aplicaciones web.</li>
+      <li><b>ISACA IT Audit Framework:</b> Guía profesional para auditores de sistemas.</li>
+    </ul>
+  </section>
 
   <section>
-  <h3>🎥 Video explicativo</h3>
-  <iframe width="935" height="315" src="https://www.youtube.com/embed/1DanpQK9mr4" title="Normas de Auditoría" frameborder="0" allowfullscreen></iframe>
+    <h3>📋 Normas de auditoría generalmente aceptadas (GAAS)</h3>
+    <p>
+      Las <b>GAAS</b> definen cómo debe conducirse una auditoría en cualquier contexto, incluyendo el digital. Establecen principios como independencia, objetividad, documentación adecuada, evidencia suficiente y comunicación clara de resultados.
+    </p>
+  </section>
 
-  <p>Este video ofrece una visión general del proceso de auditoría de sistemas, incluyendo cómo se aplican normativas y estándares internacionales en entornos digitales.</p>
-</section>
+  <section>
+    <h3>📘 Normas Internacionales de Auditoría (NIAs)</h3>
+    <p>
+      Las <b>NIAs</b>, emitidas por el IAASB, definen requisitos técnicos y éticos para auditores profesionales. Incluyen:
+    </p>
+    <ul>
+      <li><b>NIA 200:</b> Objetivos generales del auditor independiente.</li>
+      <li><b>NIA 315:</b> Evaluación de riesgos de error material.</li>
+      <li><b>NIA 330:</b> Respuesta del auditor a los riesgos.</li>
+      <li><b>NIA 500:</b> Evidencia de auditoría.</li>
+      <li><b>NIA 700:</b> Emisión del informe de auditoría.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>🧠 Importancia de aplicar normativas en auditorías web</h3>
+    <ul>
+      <li>Garantiza profesionalismo, ética y validez legal.</li>
+      <li>Facilita la comparación entre sitios y organizaciones.</li>
+      <li>Protege la privacidad y la integridad de los sistemas.</li>
+      <li>Evita sanciones legales por incumplimiento.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>📎 Recursos y enlaces útiles</h3>
+    <ul>
+      <li><a href="https://www.iso.org/isoiec-27001-information-security.html" target="_blank">ISO/IEC 27001</a></li>
+      <li><a href="https://www.isaca.org/resources/cobit" target="_blank">COBIT por ISACA</a></li>
+      <li><a href="https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final" target="_blank">NIST SP 800-53</a></li>
+      <li><a href="https://owasp.org/www-project-application-security-verification-standard/" target="_blank">OWASP ASVS</a></li>
+      <li><a href="https://www.ifac.org/system/files/publications/files/ISA-200.pdf" target="_blank">NIA 200</a></li>
+      <li><a href="https://servernet.com.ar/normas-internacionales-de-auditoria-informatica/" target="_blank">Artículo sobre auditoría informática</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>🎥 Video explicativo</h3>
+    <iframe width="935" height="315" src="https://www.youtube.com/embed/1DanpQK9mr4" title="Normas de Auditoría" frameborder="0" allowfullscreen></iframe>
+    <p>Este video ofrece una visión general del proceso de auditoría de sistemas y cómo se aplican normativas internacionales.</p>
+  </section>
 </body>
 </html>
-
