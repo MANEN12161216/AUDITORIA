@@ -3,17 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Auditoría Web</title>
-  <link rel="icon" href="/imagenes/auditoria.png" type="image/png">
-  <link rel="stylesheet" href="/css/estilos.css">
-  <script src="/js/ventanas.js" defer></script>
-  <script src="/js/interaccion.js" defer></script>
-  
+  <link rel="icon" href="/AUDITORIA/imagenes/auditoria.png" type="image/png">
+  <link rel="stylesheet" href="/AUDITORIA/css/estilos.css">
+  <script src="/AUDITORIA/js/ventanas.js" defer></script>
+  <script src="/AUDITORIA/js/interaccion.js" defer></script>
 </head>
 <body data-tab="auditoria">
   <div id="menu-visual-dinamico"></div>
 
   <script>
-    fetch('/componentes/menu-visual.html')
+    fetch('/AUDITORIA/componentes/menu-visual.html')
       .then(res => res.text())
       .then(html => {
         document.getElementById('menu-visual-dinamico').innerHTML = html;
@@ -22,62 +21,61 @@
 
   <header><h1>Auditoría Web de Sistemas</h1></header>
 
+  <section>
+    <h2>Introducción a la Auditoría Web</h2>
+    <p>
+      La <b>auditoría web</b> es un proceso técnico y estratégico que permite evaluar el estado general de un sitio web. Su objetivo principal es garantizar que la plataforma digital funcione correctamente, sea segura para los usuarios y cumpla con los estándares de calidad esperados en entornos profesionales. Esta evaluación se realiza sobre aspectos como la estructura del sitio, la navegación, la integridad del contenido y la experiencia del usuario.
+    </p>
 
-<section>
-  <h2>Introducción a la Auditoría Web</h2>
-  <p>
-    La <b>auditoría web</b> es un proceso técnico y estratégico que permite evaluar el estado general de un sitio web. Su objetivo principal es garantizar que la plataforma digital funcione correctamente, sea segura para los usuarios y cumpla con los estándares de calidad esperados en entornos profesionales. Esta evaluación se realiza sobre aspectos como la estructura del sitio, la navegación, la integridad del contenido y la experiencia del usuario.
-  </p>
+    <h2>Importancia de auditar un sitio web</h2>
+    <p>
+      En un mundo cada vez más digitalizado, los sitios web son el rostro público de organizaciones, marcas y proyectos. Una auditoría web permite detectar errores, inconsistencias o riesgos que podrían afectar la reputación, la funcionalidad o la seguridad del sitio. Además, ayuda a mantener la confianza de los visitantes y a asegurar que el sitio esté alineado con sus objetivos.
+    </p>
 
-  <h2>Importancia de auditar un sitio web</h2>
-  <p>
-    En un mundo cada vez más digitalizado, los sitios web son el rostro público de organizaciones, marcas y proyectos. Una auditoría web permite detectar errores, inconsistencias o riesgos que podrían afectar la reputación, la funcionalidad o la seguridad del sitio. Además, ayuda a mantener la confianza de los visitantes y a asegurar que el sitio esté alineado con sus objetivos.
-  </p>
+    <ul>
+      <li><b>Calidad visual y estructural:</b> Verifica que el diseño sea coherente, accesible y profesional.</li>
+      <li><b>Experiencia del usuario:</b> Evalúa la facilidad de navegación, la claridad del contenido y la interacción general.</li>
+      <li><b>Estabilidad:</b> Revisa que no existan errores visibles, enlaces rotos o comportamientos inesperados.</li>
+      <li><b>Adaptabilidad:</b> Comprueba que el sitio se visualice correctamente en distintos dispositivos y tamaños de pantalla.</li>
+    </ul>
 
-  <ul>
-    <li><b>Calidad visual y estructural:</b> Verifica que el diseño sea coherente, accesible y profesional.</li>
-    <li><b>Experiencia del usuario:</b> Evalúa la facilidad de navegación, la claridad del contenido y la interacción general.</li>
-    <li><b>Estabilidad:</b> Revisa que no existan errores visibles, enlaces rotos o comportamientos inesperados.</li>
-    <li><b>Adaptabilidad:</b> Comprueba que el sitio se visualice correctamente en distintos dispositivos y tamaños de pantalla.</li>
-  </ul>
+    <h2>Tipos de auditoría web</h2>
+    <p>
+      Aunque cada auditoría puede adaptarse a las necesidades del proyecto, existen enfoques comunes que permiten revisar distintos aspectos del sitio:
+    </p>
+    <ul>
+      <li><b>Auditoría visual:</b> Revisión del diseño, tipografía, colores, coherencia gráfica y estética general.</li>
+      <li><b>Auditoría de navegación:</b> Evaluación de la estructura de menús, enlaces internos y flujo de interacción.</li>
+      <li><b>Auditoría de contenido:</b> Verificación de textos, imágenes, videos y su relevancia para el público objetivo.</li>
+      <li><b>Auditoría de accesibilidad:</b> Comprobación de que el sitio sea usable por personas con distintas capacidades.</li>
+    </ul>
 
-  <h2>Tipos de auditoría web</h2>
-  <p>
-    Aunque cada auditoría puede adaptarse a las necesidades del proyecto, existen enfoques comunes que permiten revisar distintos aspectos del sitio:
-  </p>
-  <ul>
-    <li><b>Auditoría visual:</b> Revisión del diseño, tipografía, colores, coherencia gráfica y estética general.</li>
-    <li><b>Auditoría de navegación:</b> Evaluación de la estructura de menús, enlaces internos y flujo de interacción.</li>
-    <li><b>Auditoría de contenido:</b> Verificación de textos, imágenes, videos y su relevancia para el público objetivo.</li>
-    <li><b>Auditoría de accesibilidad:</b> Comprobación de que el sitio sea usable por personas con distintas capacidades.</li>
-  </ul>
+    <h2>Principios fundamentales de una auditoría web</h2>
+    <p>
+      Toda auditoría web debe basarse en principios sólidos que garanticen la objetividad, la utilidad y la calidad del análisis. Estos principios permiten que el proceso sea confiable, replicable y enfocado en resultados reales que beneficien tanto al usuario como al equipo de desarrollo.
+    </p>
 
-<h2>Principios fundamentales de una auditoría web</h2>
-<p>
-  Toda auditoría web debe basarse en principios sólidos que garanticen la objetividad, la utilidad y la calidad del análisis. Estos principios permiten que el proceso sea confiable, replicable y enfocado en resultados reales que beneficien tanto al usuario como al equipo de desarrollo.
-</p>
+    <ul>
+      <li><b>Objetividad:</b> El análisis debe basarse en hechos observables, evitando juicios subjetivos o suposiciones.</li>
+      <li><b>Claridad:</b> Los hallazgos deben presentarse de forma comprensible, con lenguaje técnico accesible y visualmente organizado.</li>
+      <li><b>Relevancia:</b> Cada observación debe estar alineada con los objetivos del sitio y las necesidades del público objetivo.</li>
+      <li><b>Prioridad:</b> Los problemas detectados deben clasificarse según su impacto, urgencia y complejidad.</li>
+      <li><b>Transparencia:</b> Todo el proceso debe estar documentado, desde la observación inicial hasta las recomendaciones finales.</li>
+      <li><b>Mejora continua:</b> La auditoría no es un fin, sino un punto de partida para la evolución constante del sitio.</li>
+    </ul>
 
-<ul>
-  <li><b>Objetividad:</b> El análisis debe basarse en hechos observables, evitando juicios subjetivos o suposiciones.</li>
-  <li><b>Claridad:</b> Los hallazgos deben presentarse de forma comprensible, con lenguaje técnico accesible y visualmente organizado.</li>
-  <li><b>Relevancia:</b> Cada observación debe estar alineada con los objetivos del sitio y las necesidades del público objetivo.</li>
-  <li><b>Prioridad:</b> Los problemas detectados deben clasificarse según su impacto, urgencia y complejidad.</li>
-  <li><b>Transparencia:</b> Todo el proceso debe estar documentado, desde la observación inicial hasta las recomendaciones finales.</li>
-  <li><b>Mejora continua:</b> La auditoría no es un fin, sino un punto de partida para la evolución constante del sitio.</li>
-</ul>
+    <p>
+      Aplicar estos principios permite que la auditoría web no solo detecte errores, sino que se convierta en una herramienta estratégica para el crecimiento digital. Es una práctica que fortalece la calidad del sitio y la confianza de quienes lo visitan.
+    </p>
 
-<p>
-  Aplicar estos principios permite que la auditoría web no solo detecte errores, sino que se convierta en una herramienta estratégica para el crecimiento digital. Es una práctica que fortalece la calidad del sitio y la confianza de quienes lo visitan.
-</p>
+    <h2>Ejemplo visual</h2>
+    <img src="/AUDITORIA/imagenes/imagenes de paginas/visual.png" alt="Auditoría visual de un sitio web">
+    <iframe width="450" height="270" src="https://www.youtube.com/embed/XiAqSoaG00g" title="Auditoría Web en acción" frameborder="0" allowfullscreen></iframe>
 
-
-  <h2>Ejemplo visual</h2>
-  <img src="/imagenes/imagenes de paginas/visual.png" alt="Auditoría visual de un sitio web">
-<iframe width="450" height="270" src="https://www.youtube.com/embed/XiAqSoaG00g" title="Auditoría Web en acción" frameborder="0" allowfullscreen></iframe>
-
-
-  <h2>Conclusión</h2>
-  <p>
-    Auditar un sitio web no es solo una práctica técnica, sino una inversión en calidad, confianza y evolución digital. Es el primer paso para construir plataformas sólidas, atractivas y funcionales que respondan a las expectativas de los usuarios y a los objetivos del proyecto.
-  </p>
-</section>
+    <h2>Conclusión</h2>
+    <p>
+      Auditar un sitio web no es solo una práctica técnica, sino una inversión en calidad, confianza y evolución digital. Es el primer paso para construir plataformas sólidas, atractivas y funcionales que respondan a las expectativas de los usuarios y a los objetivos del proyecto.
+    </p>
+  </section>
+</body>
+</html>
