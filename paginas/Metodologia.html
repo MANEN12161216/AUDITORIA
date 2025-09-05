@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Auditoría Web</title>
+  <link rel="icon" href="../imagenes/auditoria.png" type="image/png">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <script src="../js/ventanas.js" defer></script>
+  <script src="../js/interaccion.js" defer></script>
+</head>
+
+<body data-tab="auditoria">
+<div id="menu-visual-dinamico"></div>
+ <script>
+    fetch('../componentes/menu-visual.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('menu-visual-dinamico').innerHTML = html;
+      });
+  </script>
+
+  <header><h1>Auditoría Web de Sistemas</h1></header>
+
+  <section>
+  <h2>Metodología de Auditoría Web</h2>
+  <p>
+    La <b>metodología de auditoría web</b> es el conjunto de principios, procesos y enfoques que permiten evaluar un sitio web de manera sistemática, objetiva y profesional. Su propósito es identificar debilidades, validar fortalezas y proponer mejoras que optimicen la calidad, seguridad y experiencia del usuario. Una auditoría bien estructurada no solo detecta errores, sino que ofrece una hoja de ruta clara para la evolución digital del proyecto.
+  </p>
+
+  <h2>Objetivos de una metodología efectiva</h2>
+  <ul>
+    <li><b>Consistencia:</b> Aplicar criterios uniformes en todas las evaluaciones.</li>
+    <li><b>Repetibilidad:</b> Permitir que el proceso pueda ser replicado por otros auditores.</li>
+    <li><b>Transparencia:</b> Documentar cada paso y hallazgo con claridad.</li>
+    <li><b>Adaptabilidad:</b> Ajustarse a distintos tipos de sitios, públicos y propósitos.</li>
+    <li><b>Impacto:</b> Generar recomendaciones accionables que mejoren el sitio de forma tangible.</li>
+  </ul>
+
+  <h2>Fases del proceso de auditoría</h2>
+  <ol>
+    <li><b>1. Preparación:</b> Se define el alcance, los objetivos, los criterios de evaluación y los recursos disponibles. Se establece si la auditoría será interna, externa, parcial o completa.</li>
+    <li><b>2. Exploración inicial:</b> Se realiza una navegación libre por el sitio para detectar problemas evidentes, inconsistencias visuales o errores funcionales.</li>
+    <li><b>3. Evaluación estructurada:</b> Se revisa cada sección del sitio según criterios definidos: navegación, contenido, diseño, accesibilidad, rendimiento, coherencia visual, etc.</li>
+    <li><b>4. Registro de hallazgos:</b> Se documentan los errores detectados, las oportunidades de mejora y los elementos que cumplen con buenas prácticas.</li>
+    <li><b>5. Análisis de impacto:</b> Se priorizan los hallazgos según su gravedad, frecuencia y efecto sobre el usuario o el negocio.</li>
+    <li><b>6. Elaboración del informe:</b> Se presenta un documento claro, visual y estructurado con los resultados, recomendaciones y plan de acción.</li>
+    <li><b>7. Seguimiento:</b> Se verifica que las correcciones hayan sido implementadas correctamente y se evalúa el impacto de los cambios.</li>
+  </ol>
+
+  <h2>Tipos de enfoque metodológico</h2>
+  <ul>
+    <li><b>Heurístico:</b> Basado en principios de usabilidad reconocidos, como los de Jakob Nielsen. Evalúa la interfaz según reglas generales de diseño y experiencia.</li>
+    <li><b>Comparativo:</b> Compara el sitio con estándares del sector o con competidores directos para detectar brechas y oportunidades.</li>
+    <li><b>Checklist estructurado:</b> Utiliza listas de verificación detalladas para revisar cada componente del sitio, desde la cabecera hasta el pie de página.</li>
+    <li><b>Colaborativo:</b> Involucra a distintos perfiles (desarrolladores, diseñadores, usuarios reales) para obtener una visión más completa y diversa.</li>
+    <li><b>Contextual:</b> Adapta la auditoría al tipo de sitio (corporativo, educativo, e-commerce, institucional) y a su público objetivo.</li>
+  </ul>
+
+  <h2>Áreas que se pueden auditar</h2>
+  <ul>
+    <li><b>Estructura de navegación:</b> Claridad de menús, enlaces internos, jerarquía de páginas.</li>
+    <li><b>Diseño visual:</b> Coherencia gráfica, legibilidad, contraste, uso de colores y tipografía.</li>
+    <li><b>Contenido:</b> Calidad de textos, relevancia, ortografía, tono comunicativo.</li>
+    <li><b>Accesibilidad:</b> Compatibilidad con lectores de pantalla, navegación por teclado, etiquetas semánticas.</li>
+    <li><b>Interacción:</b> Comportamiento de botones, formularios, animaciones y retroalimentación visual.</li>
+    <li><b>Adaptabilidad:</b> Visualización en distintos dispositivos, tamaños de pantalla y navegadores.</li>
+  </ul>
+
+  <h2>Ejemplo visual del proceso</h2>
+  <img width="450" height="270" src="../imagenes/imagenes de paginas/proceso.png" alt="Proceso de auditoría web">
+<iframe width="450" height="270" src="https://www.youtube.com/embed/QeTYhk8d9IA" title="Auditoría Web en acción" frameborder="0" allowfullscreen></iframe>
+
+
+  <h2>Recomendaciones para aplicar la metodología</h2>
+  <ul>
+    <li>Define claramente los objetivos antes de comenzar.</li>
+    <li>Utiliza criterios medibles y observables.</li>
+    <li>Documenta cada hallazgo con capturas, descripciones y nivel de prioridad.</li>
+    <li>Involucra a distintos perfiles para enriquecer la evaluación.</li>
+    <li>Presenta los resultados de forma visual y comprensible.</li>
+    <li>Haz seguimiento de las correcciones y mide su impacto.</li>
+  </ul>
+
+  <h2>Referencia externa</h2>
+  <p>
+    Para conocer más sobre metodologías de auditoría digital, puedes visitar <a href="https://www.nngroup.com/articles/heuristic-evaluation/" target="_blank">NNG Heuristic Evaluation</a>, una fuente reconocida en evaluación de interfaces y usabilidad.
+  </p>
+</section>
+

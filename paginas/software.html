@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Auditoría Web</title>
+  <link rel="icon" href="../imagenes/auditoria.png" type="image/png">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <script src="../js/ventanas.js" defer></script>
+  <script src="../js/interaccion.js" defer></script>
+</head>
+<body data-tab="auditoria">
+<div id="menu-visual-dinamico"></div>
+ <script>
+    fetch('../componentes/menu-visual.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('menu-visual-dinamico').innerHTML = html;
+      });
+  </script>
+
+  <header><h1>Auditoría Web de Sistemas</h1></header>
+  
+<section>
+  <h2>Software y herramientas para auditoría web</h2>
+  <p>
+    La auditoría web requiere herramientas especializadas que permitan evaluar distintos aspectos técnicos, visuales y estructurales de un sitio. Estas soluciones ayudan a identificar vulnerabilidades, mejorar el rendimiento, validar buenas prácticas y asegurar el cumplimiento de estándares. A continuación se presentan herramientas agrupadas por tipo de auditoría, con enlaces oficiales y funciones destacadas.
+  </p>
+
+  <h3><b>🔐 Auditoría de seguridad</b></h3>
+  <table>
+    <tr><th>Herramienta</th><th>Función principal</th><th>Enlace</th></tr>
+    <tr>
+      <td>Burp Suite</td>
+      <td>Pruebas de seguridad en aplicaciones web</td>
+      <td><a href="https://portswigger.net/burp" target="_blank">portswigger.net/burp</a></td>
+    </tr>
+    <tr>
+      <td>OpenVAS</td>
+      <td>Escaneo de vulnerabilidades en sistemas</td>
+      <td><a href="https://www.openvas.org" target="_blank">openvas.org</a></td>
+    </tr>
+    <tr>
+      <td>OWASP ZAP</td>
+      <td>Pruebas automatizadas de seguridad web</td>
+      <td><a href="https://owasp.org/www-project-zap/" target="_blank">owasp.org/ZAP</a></td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h3><b>🌐 Auditoría de red y tráfico</b></h3>
+  <table>
+    <tr><th>Herramienta</th><th>Función principal</th><th>Enlace</th></tr>
+    <tr>
+      <td>Nmap</td>
+      <td>Escaneo de red y detección de puertos abiertos</td>
+      <td><a href="https://nmap.org" target="_blank">nmap.org</a></td>
+    </tr>
+    <tr>
+      <td>Wireshark</td>
+      <td>Captura y análisis de paquetes de red</td>
+      <td><a href="https://www.wireshark.org" target="_blank">wireshark.org</a></td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h3><b>⚙️ Auditoría técnica y SEO</b></h3>
+  <table>
+    <tr><th>Herramienta</th><th>Función principal</th><th>Enlace</th></tr>
+    <tr>
+      <td>Website Auditor</td>
+      <td>Auditoría técnica, SEO y contenido</td>
+      <td><a href="https://www.link-assistant.com/es/website-auditor/" target="_blank">link-assistant.com</a></td>
+    </tr>
+    <tr>
+      <td>Screaming Frog</td>
+      <td>Análisis de estructura, enlaces y contenido</td>
+      <td><a href="https://www.screamingfrog.co.uk/seo-spider/" target="_blank">screamingfrog.co.uk</a></td>
+    </tr>
+    <tr>
+      <td>Google Search Console</td>
+      <td>Monitoreo de indexación y errores SEO</td>
+      <td><a href="https://search.google.com/search-console" target="_blank">Google Search Console</a></td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h3><b>📊 Auditoría empresarial y gestión documental</b></h3>
+  <table>
+    <tr><th>Plataforma</th><th>Función principal</th><th>Enlace</th></tr>
+    <tr>
+      <td>AuditBoard</td>
+      <td>Gestión de auditorías, riesgos y cumplimiento</td>
+      <td><a href="https://www.auditboard.com" target="_blank">auditboard.com</a></td>
+    </tr>
+    <tr>
+      <td>Workiva</td>
+      <td>Automatización de flujos de auditoría interna</td>
+      <td><a href="https://www.workiva.com/" target="_blank">workiva.com</a></td>
+    </tr>
+    <tr>
+      <td>Pirani Risk</td>
+      <td>Gestión de riesgos y auditorías normativas</td>
+      <td><a href="https://www.piranirisk.com/es/academia/especiales/10-software-gestion-auditorias" target="_blank">piranirisk.com</a></td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h2>🧠 Recomendaciones de uso</h2>
+  <ul>
+    <li>Utiliza herramientas complementarias para obtener una visión completa del sitio.</li>
+    <li>Documenta cada hallazgo con capturas, descripciones y nivel de prioridad.</li>
+    <li>Verifica que las herramientas estén actualizadas y configuradas correctamente.</li>
+    <li>Realiza auditorías periódicas para mantener la calidad y seguridad del sitio.</li>
+    <li>Aplica buenas prácticas éticas: audita solo sitios con autorización explícita.</li>
+  </ul>
+<section>
+  <p>
+  Para más información sobre herramientas específicas, puedes consultar este artículo detallado en 
+  <a href="https://www.postedin.com/blog/8-herramientas-para-auditar-tu-pagina-web/" target="_blank">
+    Postedin sobre 8 herramientas para auditar tu página web
+  </a> 
+  o esta guía técnica en 
+  <a href="https://rocketadsrank.com/mejores-herramientas-auditoria-web/" target="_blank">
+    RocketAdsRank sobre herramientas efectivas de auditoría web
+  </a>.
+</p>
+
