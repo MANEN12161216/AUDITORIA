@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Inicio | Auditoría & Drift</title>
-  <link id="favicon" rel="icon" href="imagenes/inicio.png" type="image/png">
+  <link id="favicon" rel="icon" href="/imagenes/inicio.png" type="image/png">
   <link rel="stylesheet" href="css/estilos.css">
-  <script src="js/menu-toggle.js" defer></script>
-  <script src="js/ventanas.js" defer></script>
-  <script src="js/interaccion.js" defer></script>
-  <script src="js/alternar.js" defer></script> <!-- Nuevo JS para pestañas -->
+  <script src="/js/menu-toggle.js" defer></script>
+  <script src="/js/ventanas.js" defer></script>
+  <script src="/js/interaccion.js" defer></script>
+  <script src="/js/alternar.js" defer></script> <!-- Nuevo JS para pestañas -->
 </head>
 <body>
   <!-- Botón para mostrar/ocultar -->
@@ -36,18 +36,18 @@
 <div id="contenedor-menus"></div>
 
         <div id="auditoria" class="tab-content">
-          <a href="paginas/auditoria.html">Auditoría</a>
-          <a href="paginas/Metodologia.html">Metodología de auditoría</a>
-          <a href="paginas/software.html">Software y herramientas</a>
-          <a href="paginas/Normativas-Estándares.html">Normativas y Estándares</a>
+          <a href="/paginas/auditoria.html">Auditoría</a>
+          <a href="/paginas/Metodologia.html">Metodología de auditoría</a>
+          <a href="/paginas/software.html">Software y herramientas</a>
+          <a href="/paginas/Normativas-Estándares.html">Normativas y Estándares</a>
         </div>
 
         <div id="drift" class="tab-content">
-          <a href="paginas/drift.html">Drift y Historia</a>
-          <a href="paginas/Tecnicas.html">Técnicas de Drift</a>
-          <a href="paginas/Autos.html">Autos para drift y Modificaciones</a>
-          <a href="paginas/leyendas.html">Leyendas sobre el Drift</a>
-          <a href="paginas/acerca.html">Acerca de</a>
+          <a href="/paginas/drift.html">Drift y Historia</a>
+          <a href="/paginas/Tecnicas.html">Técnicas de Drift</a>
+          <a href="/paginas/Autos.html">Autos para drift y Modificaciones</a>
+          <a href="/paginas/leyendas.html">Leyendas sobre el Drift</a>
+          <a href="/paginas/acerca.html">Acerca de</a>
         </div>
       </div>
     </nav>
@@ -57,10 +57,10 @@
   <!-- Carrusel automático -->
   <section class="carrusel animar-seccion">
     <div class="carrusel-imagenes">
-      <img src="imagenes/AUDITORIA1.png" alt="Auditoría 1">
-      <img src="imagenes/DRIFT2.png" alt="Auditoría 2">
-      <img src="imagenes/AUDITORIA3.png" alt="Auditoría 3">
-      <img src="imagenes/DRIFT4.png" alt="Auditoría 4">
+      <img src="/imagenes/AUDITORIA1.png" alt="Auditoría 1">
+      <img src="/imagenes/DRIFT2.png" alt="Auditoría 2">
+      <img src="/imagenes/AUDITORIA3.png" alt="Auditoría 3">
+      <img src="/imagenes/DRIFT4.png" alt="Auditoría 4">
     </div>
   </section>
 
@@ -110,13 +110,13 @@
       
       <div class="redes-sociales">
         <a href="https://www.facebook.com/share/1CqM1UPs95/" target="_blank" title="Facebook">
-          <img src="imagenes/icon-facebook.png" alt="Facebook">
+          <img src="/imagenes/icon-facebook.png" alt="Facebook">
         </a>
         <a href="https://x.com/JJiosander9208" target="_blank" title="Twitter">
-          <img src="imagenes/icon-twitter.png" alt="Twitter">
+          <img src="/imagenes/icon-twitter.png" alt="Twitter">
         </a>
         <a href="https://www.instagram.com/alex_m._19?igsh=YXI2NWV6dmhtdXYw" target="_blank" title="Instagram">
-          <img src="imagenes/icon-instagram.png" alt="Instagram">
+          <img src="/imagenes/icon-instagram.png" alt="Instagram">
         </a>
       </div>
 
@@ -144,11 +144,11 @@
   const url = window.location.href;
 
   if (url.includes("drift")) {
-    favicon.href = "imagenes/favicon-drift.png";
+    favicon.href = "/imagenes/favicon-drift.png";
   } else if (url.includes("auditoria")) {
-    favicon.href = "imagenes/auditoria.png";
+    favicon.href = "/imagenes/auditoria.png";
   } else {
-    favicon.href = "imagenes/inicio.png";
+    favicon.href = "/imagenes/inicio.png";
   }
 </script>
 
