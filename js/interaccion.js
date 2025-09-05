@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const menuContainer = document.getElementById("menu-container");
   if (menuContainer) {
-    fetch("../componentes/menu.html")
+    fetch("/componentes/menu.html")
       .then(response => response.text())
       .then(html => {
         menuContainer.innerHTML = html;
