@@ -3,105 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <title>Inicio | Auditoría & Drift</title>
-  <link id="favicon" rel="icon" href="/imagenes/inicio.png" type="image/png">
-  <link rel="stylesheet" href="css/estilos.css">
-  <script src="/js/menu-toggle.js" defer></script>
-  <script src="/js/ventanas.js" defer></script>
-  <script src="/js/interaccion.js" defer></script>
-  <script src="/js/alternar.js" defer></script> <!-- Nuevo JS para pestañas -->
+  <link id="favicon" rel="icon" href="/AUDITORIA/imagenes/inicio.png" type="image/png">
+  <link rel="stylesheet" href="/AUDITORIA/css/estilos.css">
+  <script src="/AUDITORIA/js/menu-toggle.js" defer></script>
+  <script src="/AUDITORIA/js/ventanas.js" defer></script>
+  <script src="/AUDITORIA/js/interaccion.js" defer></script>
+  <script src="/AUDITORIA/js/alternar.js" defer></script>
 </head>
 <body>
   <!-- Botón para mostrar/ocultar -->
-<button id="toggle-menu-btn">☰ Menú</button>
+  <button id="toggle-menu-btn">☰ Menú</button>
 
-<!-- Contenedor del menú que quieres ocultar -->
-<div id="menu-principal" class="menu-ventanas">
-  <div class="ventana-mini" onclick="location.href='index.html'">
-    <h2><b>🪟Inicio</b></h2>
-    <p>Volver a la página principal</p>
+  <!-- Contenedor del menú que quieres ocultar -->
+  <div id="menu-principal" class="menu-ventanas">
+    <div class="ventana-mini" onclick="location.href='index.html'">
+      <h2><b>🪟Inicio</b></h2>
+      <p>Volver a la página principal</p>
+    </div>
+
+    <div class="ventana-mini" onclick="mostrarVentanas('auditoria')">
+      <h2><b>🧾Auditoría</b></h2>
+      <p>Explorar secciones sobre Auditoría Web</p>
+    </div>
+
+    <div class="ventana-mini" onclick="mostrarVentanas('drift')">
+      <h2><b>🏎️Drift</b></h2>
+      <p>Contenido sobre Drift</p>
+    </div>
   </div>
 
-  <div class="ventana-mini" onclick="mostrarVentanas('auditoria')">
-    <h2><b>🧾Auditoría</b></h2>
-    <p>Explorar secciones sobre Auditoria Wed</p>
+  <div id="contenedor-menus"></div>
+
+  <div id="auditoria" class="tab-content">
+    <a href="/AUDITORIA/paginas/auditoria.html">Auditoría</a>
+    <a href="/AUDITORIA/paginas/Metodologia.html">Metodología de auditoría</a>
+    <a href="/AUDITORIA/paginas/software.html">Software y herramientas</a>
+    <a href="/AUDITORIA/paginas/Normativas-Estándares.html">Normativas y Estándares</a>
   </div>
 
-  <div class="ventana-mini" onclick="mostrarVentanas('drift')">
-    <h2><b>🏎️Drift</b></h2>
-    <p>contenido sobre Drift</p>
+  <div id="drift" class="tab-content">
+    <a href="/AUDITORIA/paginas/drift.html">Drift y Historia</a>
+    <a href="/AUDITORIA/paginas/Tecnicas.html">Técnicas de Drift</a>
+    <a href="/AUDITORIA/paginas/Autos.html">Autos para drift y Modificaciones</a>
+    <a href="/AUDITORIA/paginas/leyendas.html">Leyendas sobre el Drift</a>
+    <a href="/AUDITORIA/paginas/acerca.html">Acerca de</a>
   </div>
-</div>
-
-
-<div id="contenedor-menus"></div>
-
-        <div id="auditoria" class="tab-content">
-          <a href="/paginas/auditoria.html">Auditoría</a>
-          <a href="/paginas/Metodologia.html">Metodología de auditoría</a>
-          <a href="/paginas/software.html">Software y herramientas</a>
-          <a href="/paginas/Normativas-Estándares.html">Normativas y Estándares</a>
-        </div>
-
-        <div id="drift" class="tab-content">
-          <a href="/paginas/drift.html">Drift y Historia</a>
-          <a href="/paginas/Tecnicas.html">Técnicas de Drift</a>
-          <a href="/paginas/Autos.html">Autos para drift y Modificaciones</a>
-          <a href="/paginas/leyendas.html">Leyendas sobre el Drift</a>
-          <a href="/paginas/acerca.html">Acerca de</a>
-        </div>
-      </div>
-    </nav>
-  </header>
 
   <div id="inicio" class="tab-content active">
-  <!-- Carrusel automático -->
-  <section class="carrusel animar-seccion">
-    <div class="carrusel-imagenes">
-      <img src="/imagenes/AUDITORIA1.png" alt="Auditoría 1">
-      <img src="/imagenes/DRIFT2.png" alt="Auditoría 2">
-      <img src="/imagenes/AUDITORIA3.png" alt="Auditoría 3">
-      <img src="/imagenes/DRIFT4.png" alt="Auditoría 4">
-    </div>
-  </section>
+    <!-- Carrusel automático -->
+    <section class="carrusel animar-seccion">
+      <div class="carrusel-imagenes">
+        <img src="/AUDITORIA/imagenes/AUDITORIA1.png" alt="Auditoría 1">
+        <img src="/AUDITORIA/imagenes/DRIFT2.png" alt="Auditoría 2">
+        <img src="/AUDITORIA/imagenes/AUDITORIA3.png" alt="Auditoría 3">
+        <img src="/AUDITORIA/imagenes/DRIFT4.png" alt="Auditoría 4">
+      </div>
+    </section>
 
-  <!-- Introducción creativa -->
-  <section class="introduccion animar-seccion">
-    <h2>Bienvenido a Auditoría Web & Drift</h2>
-    <p>
-      Este sitio es una fusión única entre dos mundos que, aunque distintos en esencia, comparten una misma pasión por la precisión, el control y la evolución constante. Por un lado, exploramos el universo de la <b>auditoría web</b>: un proceso meticuloso que garantiza la seguridad, eficiencia y cumplimiento de los sistemas digitales. Por otro, nos sumergimos en el arte del <b>drift automovilístico</b>, donde la técnica, la historia y la adrenalina se combinan para crear una cultura vibrante y desafiante.
-    </p>
-    <p>
-      En la sección de <u>Auditoría</u>, descubrirás cómo se analizan los sistemas informáticos, qué metodologías se aplican, qué herramientas se utilizan y por qué las normativas internacionales como ISO y COBIT son fundamentales para garantizar la integridad digital. Desde el diagnóstico inicial hasta la implementación de mejoras, cada paso está diseñado para fortalecer tu infraestructura tecnológica.
-    </p>
-    <p>
-      En paralelo, la sección de <u>Drift</u> te llevará por un recorrido emocionante: desde sus orígenes en las montañas de Japón hasta las técnicas modernas que dominan las pistas. Conocerás los <i>autos más icónicos</i>, las maniobras más audaces y las leyendas que han marcado historia. Aquí no solo se trata de velocidad, sino de estilo, control y respeto por una disciplina que exige tanto del piloto como de la máquina.
-    </p>
-    <p>
-      Este sitio está dividido en páginas temáticas que te permitirán navegar con claridad y profundidad:
-    </p>
-  <section class="listas-tematicas animar-seccion">
-  <div class="lista-columna">
-    <h3>Auditoría</h3>
-    <ul>
-      <li><b>Auditoría:</b> Qué es, por qué importa y cómo se realiza.</li>
-      <li><b>Metodología de auditoría:</b> Fases, enfoques y estándares aplicados.</li>
-      <li><b>Software y herramientas:</b> Soluciones que potencian el análisis técnico.</li>
-      <li><b>Normativas y Estándares:</b> ISO, NIST, COBIT y más.</li>
-    </ul>
+    <!-- Introducción creativa -->
+    <section class="introduccion animar-seccion">
+      <h2>Bienvenido a Auditoría Web & Drift</h2>
+      <p>
+        Este sitio es una fusión única entre dos mundos que, aunque distintos en esencia, comparten una misma pasión por la precisión, el control y la evolución constante. Por un lado, exploramos el universo de la <b>auditoría web</b>: un proceso meticuloso que garantiza la seguridad, eficiencia y cumplimiento de los sistemas digitales. Por otro, nos sumergimos en el arte del <b>drift automovilístico</b>, donde la técnica, la historia y la adrenalina se combinan para crear una cultura vibrante y desafiante.
+      </p>
+      <p>
+        En la sección de <u>Auditoría</u>, descubrirás cómo se analizan los sistemas informáticos, qué metodologías se aplican, qué herramientas se utilizan y por qué las normativas internacionales como ISO y COBIT son fundamentales para garantizar la integridad digital. Desde el diagnóstico inicial hasta la implementación de mejoras, cada paso está diseñado para fortalecer tu infraestructura tecnológica.
+      </p>
+      <p>
+        En paralelo, la sección de <u>Drift</u> te llevará por un recorrido emocionante: desde sus orígenes en las montañas de Japón hasta las técnicas modernas que dominan las pistas. Conocerás los <i>autos más icónicos</i>, las maniobras más audaces y las leyendas que han marcado historia. Aquí no solo se trata de velocidad, sino de estilo, control y respeto por una disciplina que exige tanto del piloto como de la máquina.
+      </p>
+      <p>
+        Este sitio está dividido en páginas temáticas que te permitirán navegar con claridad y profundidad:
+      </p>
+    </section>
+
+    <section class="listas-tematicas animar-seccion">
+      <div class="lista-columna">
+        <h3>Auditoría</h3>
+        <ul>
+          <li><b>Auditoría:</b> Qué es, por qué importa y cómo se realiza.</li>
+          <li><b>Metodología de auditoría:</b> Fases, enfoques y estándares aplicados.</li>
+          <li><b>Software y herramientas:</b> Soluciones que potencian el análisis técnico.</li>
+          <li><b>Normativas y Estándares:</b> ISO, NIST, COBIT y más.</li>
+        </ul>
+      </div>
+
+      <div class="lista-columna">
+        <h3>Drift</h3>
+        <ul>
+          <li><b>Drift y Historia:</b> Desde Keiichi Tsuchiya hasta los campeonatos actuales.</li>
+          <li><b>Técnicas de Drift:</b> Powerslide, clutch kick, feint y más.</li>
+          <li><b>Autos para Drift:</b> Máquinas diseñadas para deslizar con elegancia.</li>
+          <li><b>Leyendas sobre el Drift:</b> Mitos, cultura y curiosidades.</li>
+        </ul>
+      </div>
+    </section>
   </div>
 
-  <div class="lista-columna">
-    <h3>Drift</h3>
-    <ul>
-      <li><b>Drift y Historia:</b> Desde Keiichi Tsuchiya hasta los campeonatos actuales.</li>
-      <li><b>Técnicas de Drift:</b> Powerslide, clutch kick, feint y más.</li>
-      <li><b>Autos para Drift:</b> Máquinas diseñadas para deslizar con elegancia.</li>
-      <li><b>Leyendas sobre el Drift:</b> Mitos, cultura y curiosidades.</li>
-    </ul>
-  </div>
-</section>
-
-<section>
   <!-- Footer creativo -->
   <footer class="animar-footer">
     <div class="footer-contenido">
@@ -110,48 +108,47 @@
       
       <div class="redes-sociales">
         <a href="https://www.facebook.com/share/1CqM1UPs95/" target="_blank" title="Facebook">
-          <img src="/imagenes/icon-facebook.png" alt="Facebook">
+          <img src="/AUDITORIA/imagenes/icon-facebook.png" alt="Facebook">
         </a>
         <a href="https://x.com/JJiosander9208" target="_blank" title="Twitter">
-          <img src="/imagenes/icon-twitter.png" alt="Twitter">
+          <img src="/AUDITORIA/imagenes/icon-twitter.png" alt="Twitter">
         </a>
         <a href="https://www.instagram.com/alex_m._19?igsh=YXI2NWV6dmhtdXYw" target="_blank" title="Instagram">
-          <img src="/imagenes/icon-instagram.png" alt="Instagram">
+          <img src="/AUDITORIA/imagenes/icon-instagram.png" alt="Instagram">
         </a>
       </div>
 
       <p class="creditos">© 2025 Manaen Dev Studio — Código, diseño y derrapes con propósito.</p>
     </div>
+
     <script>
-  const carrusel = document.querySelector('.carrusel-imagenes');
-  let scrollAmount = 0;
+      const carrusel = document.querySelector('.carrusel-imagenes');
+      let scrollAmount = 0;
 
-  setInterval(() => {
-    scrollAmount += carrusel.clientWidth;
-    if (scrollAmount >= carrusel.scrollWidth) {
-      scrollAmount = 0;
-    }
-    carrusel.scrollTo({
-      left: scrollAmount,
-      behavior: 'smooth'
-    });
-  }, 2500); // cambaia cada 2.5 segundos
-</script>
+      setInterval(() => {
+        scrollAmount += carrusel.clientWidth;
+        if (scrollAmount >= carrusel.scrollWidth) {
+          scrollAmount = 0;
+        }
+        carrusel.scrollTo({
+          left: scrollAmount,
+          behavior: 'smooth'
+        });
+      }, 2500);
+    </script>
 
-<script>
-  // Detecta la URL actual y cambia el ícono según la sección
-  const favicon = document.getElementById('favicon');
-  const url = window.location.href;
+    <script>
+      const favicon = document.getElementById('favicon');
+      const url = window.location.href;
 
-  if (url.includes("drift")) {
-    favicon.href = "/imagenes/favicon-drift.png";
-  } else if (url.includes("auditoria")) {
-    favicon.href = "/imagenes/auditoria.png";
-  } else {
-    favicon.href = "/imagenes/inicio.png";
-  }
-</script>
-
+      if (url.includes("drift")) {
+        favicon.href = "/AUDITORIA/imagenes/favicon-drift.png";
+      } else if (url.includes("auditoria")) {
+        favicon.href = "/AUDITORIA/imagenes/auditoria.png";
+      } else {
+        favicon.href = "/AUDITORIA/imagenes/inicio.png";
+      }
+    </script>
   </footer>
 </body>
 </html>
