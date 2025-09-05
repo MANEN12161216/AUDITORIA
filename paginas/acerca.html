@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <title>DRIFT</title>
   <link rel="icon" href="imagenes/drift.png" type="image/png">
-  <script src="js/ventanas.js" defer></script>
-  <link rel="stylesheet" href="css/estilos.css">
-  <script src="js/interaccion.js" defer></script>
+  <script src="../js/ventanas.js" defer></script>
+  <link rel="stylesheet" href="../css/estilos.css">
+  <script src="../js/interaccion.js" defer></script>
 </head>
 <body data-tab="drift">
 <div id="menu-visual-dinamico"></div>
 
   <script>
-    fetch('componentes/menu-visual.html')
+    fetch('../componentes/menu-visual.html')
       .then(res => res.text())
       .then(html => {
         document.getElementById('menu-visual-dinamico').innerHTML = html;

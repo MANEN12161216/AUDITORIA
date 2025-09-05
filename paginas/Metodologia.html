@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Auditoría Web</title>
-  <link rel="icon" href="imagenes/auditoria.png" type="image/png">
-  <link rel="stylesheet" href="css/estilos.css">
-  <script src="js/ventanas.js" defer></script>
-  <script src="js/interaccion.js" defer></script>
+  <link rel="icon" href="../imagenes/auditoria.png" type="image/png">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <script src="../js/ventanas.js" defer></script>
+  <script src="../js/interaccion.js" defer></script>
 </head>
 
 <body data-tab="auditoria">
 <div id="menu-visual-dinamico"></div>
  <script>
-    fetch('componentes/menu-visual.html')
+    fetch('../componentes/menu-visual.html')
       .then(res => res.text())
       .then(html => {
         document.getElementById('menu-visual-dinamico').innerHTML = html;
@@ -67,7 +67,7 @@
   </ul>
 
   <h2>Ejemplo visual del proceso</h2>
-  <img width="450" height="270" src="imagenes/imagenes de paginas/proceso.png" alt="Proceso de auditoría web">
+  <img width="450" height="270" src="../imagenes/imagenes de paginas/proceso.png" alt="Proceso de auditoría web">
 <iframe width="450" height="270" src="https://www.youtube.com/embed/QeTYhk8d9IA" title="Auditoría Web en acción" frameborder="0" allowfullscreen></iframe>
 
 
